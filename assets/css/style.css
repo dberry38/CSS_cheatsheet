@@ -1,2 +1,105 @@
 /* TODO: all the css */
 
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    background-image: linear-gradient(
+        #054c59 0%,
+        #12b7b7 100%
+    );
+}
+
+body article {
+    align-content: stretch;
+    margin: 25px;
+    padding: 5px;
+    border-style: double;
+    border-color: rgb(0, 255, 4);
+    border-width: 7px;
+    border-radius: 15% 15% 5% 5%;
+    text-align: center;
+}
+
+
+article pre {
+    text-align: left;
+    /* content-align: center; */
+    padding: 0 10px 0 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -20px;
+    max-height: 120px;
+    max-width: 100%;
+    align-items: center;
+    background-color: #054c59;
+    color: rgb(31, 183, 31);
+}
+
+header p {
+    max-width: 60%;
+    text-align: center;
+    position: relative;
+    top: -20px;
+}
+  
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+article, .card-header {
+    border-radius: 16px;
+    transition: all 0.5s ease-in-out;
+}
+
+article:hover,
+article:hover  .card-header {
+    box-shadow: inset 0px 0px 8px
+   rgb(255, 255, 255), 0 0 15px
+   rgb(0, 255, 136);
+}
+
+.card-header {
+    margin: 0 10px;
+    position: relative;
+    top: -30px;
+    border-width: 9px;
+    border-radius: 15% 15% 50% 50%;
+    border-color: rgb(20, 196, 52);
+    border-block-start-style: ridge;
+    border-block-end-style: ridge;
+    background-color: rgb(154, 8, 57);
+}
+
+/* .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.card-header:hover {
+    box-shadow: inset 0px 0px 8px
+   rgb(145, 251, 255), 0 0 15px
+   rgb(0, 255, 136);
+} */
+
+
+/* this probably isnt done */
+@media screen and (min-width: 992px) { 
+    header {
+        flex-direction: column;
+    }
+
+    main {
+        max-width: 1200px;
+    }
+}
